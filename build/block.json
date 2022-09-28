@@ -13,5 +13,11 @@
   "textdomain": "sensitive-content",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
-  "style": "file:./style-index.css"
+  "style": "file:./style-index.css",
+  "attributes": {
+    "warningText": {
+      "type": "text",
+      "default": "Content Warning: This content has been flagged as sensitive, click to view."
+    }
+  }
 }

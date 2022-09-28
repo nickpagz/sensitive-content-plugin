@@ -1,13 +1,14 @@
 import { __ } from '@wordpress/i18n';
-import { useBlockProps } from '@wordpress/block-editor';
+import { useBlockProps, InnerBlocks } from '@wordpress/block-editor';
 
-export default function save() {
+export default function save( { attributes } ) {
+	//console.log( attributes );
+	//const { warningText } = attributes;
+	//console.log( warningText );
 	return (
-		<p { ...useBlockProps.save() }>
-			{ __(
-				'Sensitive Content – hello from the saved content!',
-				'sensitive-content'
-			) }
-		</p>
+		<div { ...useBlockProps.save( { className: 'image-holder' } ) }>
+			<InnerBlocks.Content />
+			<p>{ attributes.warningText }</p>
+		</div>
 	);
 }
