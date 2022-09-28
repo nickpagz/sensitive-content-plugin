@@ -10,4 +10,14 @@
   border: 1px dotted #f00;
 }
 
+.blurred {
+  overflow: unset;
+  filter: none;
+  -webkit-filter: none;
+}
+
+.text__cont {
+  display: none;
+}
+
 /*# sourceMappingURL=index.css.map*/

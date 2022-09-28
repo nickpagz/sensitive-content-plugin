@@ -7,6 +7,51 @@
 
 .wp-block-create-block-sensitive-content {
 	background-color: #21759b;
-	color: #fff;
+	//color: #fff;
 	padding: 2px;
+}
+
+.image-holder {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+}
+
+.blurred {
+	overflow: hidden;
+	filter: blur(50px);
+	-webkit-filter: blur(50px);
+
+	a {
+		pointer-events: none;
+	}
+}
+
+.text__cont {
+	text-align: center;
+	margin: auto;
+	position: absolute;
+
+	p {
+		//color: #000;
+		width: 80%;
+		margin: auto;
+	}
+}
+
+hr {
+	width: 80%;
+	margin-bottom: 20px;
+	//color: #000;
+	border-style: solid;
+}
+
+.show-image {
+	text-decoration: underline;
+
+	&:hover {
+		cursor: pointer; 
+	}
 }

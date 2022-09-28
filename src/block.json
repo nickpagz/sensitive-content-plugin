@@ -18,6 +18,14 @@
 		"warningText": {
 			"type": "text",
 			"default": "Content Warning: This content has been flagged as sensitive, click to view."
+		},
+		"revealLink": {
+			"type": "text",
+			"default": "Show Image"
+		},
+		"textColor": {
+			"type": "string",
+			"default": "#000000"
 		}
 	}
 }

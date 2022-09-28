@@ -9,8 +9,47 @@
  */
 .wp-block-create-block-sensitive-content {
   background-color: #21759b;
-  color: #fff;
   padding: 2px;
+}
+
+.image-holder {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.blurred {
+  overflow: hidden;
+  filter: blur(50px);
+  -webkit-filter: blur(50px);
+}
+.blurred a {
+  pointer-events: none;
+}
+
+.text__cont {
+  text-align: center;
+  margin: auto;
+  position: absolute;
+}
+.text__cont p {
+  width: 80%;
+  margin: auto;
+}
+
+hr {
+  width: 80%;
+  margin-bottom: 20px;
+  border-style: solid;
+}
+
+.show-image {
+  text-decoration: underline;
+}
+.show-image:hover {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style-index.css.map*/
